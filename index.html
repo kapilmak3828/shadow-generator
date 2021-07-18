@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>shadowgenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<h1 class="nav">Shadow Generator</h1>
+<div class="container">
+    <div class="options">
+    
+       <div class="optionbox">
+        <div class="tag">Box Shadow Options</div>
+        <div class="inputbox">
+            <label for="Hshadow">Horizontal shadow Length </label>
+    
+            <input type="range" name="Hshadow" id="Hshadow" min="-200" max="200" value="0" data-sizing = "px">
+
+            <label for="Vshadow">Vertical Shadow Length</label>
+            <input type="range" name="Vshadow" id="Vshadow" min="-200" max="200" value="0" data-sizing = "px">
+            
+            <label for="blur">Blur Radius</label>
+            <input type="range" name="blur" id="blur" min="0" max="400" value="0" data-sizing="px">
+
+            <label for="Scolor">Shadow Color</label>
+            <input type="color" name="Scolor" id="Scolor" value="#000000">
+            
+            
+            
+        </div>
+       </div>
+       </div>
+    <div class="box">
+
+         <div class="mainbox"></div>
+         </div>
+
+        
+</div>
+
+<div class="content">
+    <textarea name="copy" id="copy" cols="50" rows="5"></textarea>
+    <button class="btn"><i class="fa fa-copy ">Copy</i></button>
+    
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

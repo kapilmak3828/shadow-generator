@@ -1,0 +1,137 @@
+
+
+:root{
+    --Hshadow : 10px;
+    --Vshadow : 10px;
+    --blur     : 10px;
+    --Scolor : #000000;
+    --mcolor : cornflowerblue;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    background-color: var(--mcolor);
+    color:white;
+    padding: 10px;
+    margin-top: 0;
+    
+}
+
+
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+
+}
+
+.options{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.optionbox{
+    width: 100%;
+    padding : 20px;
+    box-sizing: border-box;
+}
+
+.tag{
+    color: white;
+    background-color: var(--mcolor);
+    padding:10px;
+    font-size: 18px;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    padding:20px;
+
+}
+
+label{
+    margin-top: 20px;
+}
+
+input[type = "range"]{
+    width: 100%;
+    margin: 10px auto;
+}
+
+input[type = "color"]{
+    margin: 10px auto;
+}
+
+.box{
+    width:65%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+
+}
+
+.mainbox{
+    width: 300px;
+    height: 200px;
+    background-color: var(--mcolor);
+    box-shadow: var(--Hshadow) var(--Vshadow) var(--blur) var(--Scolor) ;
+}
+
+.content{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  margin-top: 50px;
+
+}
+textarea{
+background-color: rgba(211, 211, 211, 0.452);
+border-radius: 10px;
+padding:20px;
+font-size: 20px;
+border: 1px solid var(--mcolor);
+outline: none;
+
+}
+
+.btn{
+    color: white;
+    background-color: var(--mcolor);
+    padding:10px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+  
+}
+
+@media screen and (max-width:800px) {
+
+.container{
+    flex-direction:column;
+}
+
+.options{
+    width: 100%;
+}
+.box{
+    width: 100%;
+}
+    
+}
+
